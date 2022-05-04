@@ -18,7 +18,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="/customers" class="nav-link ">
+                  <a href="/portofolio" class="nav-link ">
                     <i class="fas fa-bezier-curve nav-icon"></i>
                     <p>Portofolio</p>
                   </a>
