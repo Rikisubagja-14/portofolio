@@ -23,11 +23,11 @@ class PortofolioController extends Controller
     public function store (Request $request)
     {
         $this->validate($request,[
-            'name_app' => 'required|max:5',
-            'city_clint' => 'required|max:5',
-            'categoty' => 'required|max:5',
+            'name_app' => 'required',
+            'city_clint' => 'required',
+            'categoty' => 'required',
             'project_date' => 'required',
-            'project_url' => 'required|max:5',
+            'project_url' => 'required',
             'image_project' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ]);
 
@@ -40,12 +40,12 @@ class PortofolioController extends Controller
         //create portofolio
 
         Portofolio::create([
-            'name_about' => $request->name_about,
+            'name_app' => $request->name_app,
             'city_clint' => $request->city_clint,
             'categoty' => $request->categoty,
             'project_date' => $request->project_date,
             'project_url' => $request->project_url,
-            'image_project' => $request->hashName(),
+            'image_project' => $image_project->hashName(),
         ]);
 
         //redirect index3

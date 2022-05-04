@@ -42,16 +42,13 @@
                                 <td>{{ $porto->categoty }}</td>
                                 <td>{{ $porto->project_date }}</td>
                                 <td>{{ $porto->project_url }}</td>
-                                <td>{{ $porto->project_url }}</td>
                                 <td class="text-center">
-                                    <img src="{{ Storage::url('public/portfolio/').$porto->image_project }}" class="rounded" style="width: 150px">
+                                    <img src="{{ Storage::url('public/portfolio/').$porto->image_project }}" class="rounded" style="width: 100px">
                                 </td>
-
-
                                 <td class="text-center">
                                     <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                        action="{{ route('about.destroy', $porto->id) }}" method="POST">
-                                        <a href="{{ route('about.edit', $porto->id) }}"
+                                        action="{{ route('portfolio.destroy', $porto->id) }}" method="POST">
+                                        <a href="{{ route('poaction="{{ route('portfolio.edit', $porto->id) }}"
                                             class="btn btn-sm btn-primary">EDIT</a>
                                         @csrf
                                         @method('DELETE')
