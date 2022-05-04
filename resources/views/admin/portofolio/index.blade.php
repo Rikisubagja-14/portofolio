@@ -18,8 +18,33 @@
                         <i class="fas fa-times"></i></button>
                 </div>
             </div>
-            <div class="card-body ">
-                <table id="table_data" class="table-responsive table-bordered table-striped scroll">
+
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        {{-- serach bar --}}
+                        <form>
+                            <div class="card-header">
+                                <div class="card-tools">
+                                    <div class="input-group input-group-sm" style="width: 150px;">
+                                        <input type="text" name="search" class="form-control float-right"
+                                            placeholder="Search">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit">
+                                                <i class="fas fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body table-responsive p-0" style="height: 300px; ">
+                <table id="table_data" class="table table-head-fixed text-nowrap">
                     <thead>
                         <tr>
                             <th>No</th>
@@ -43,7 +68,7 @@
                                 <td>{{ $porto->project_date }}</td>
                                 <td>{{ $porto->project_url }}</td>
                                 <td class="text-center">
-                                    <img src="{{ Storage::url('public/portfolio/').$porto->image_project }}" class="rounded" style="width: 100px">
+                                    <img src="{{ Storage::url('portofolio/').$porto->image_project }}" class="rounded" style="width: 100px">
                                 </td>
                                 <td class="text-center">
                                     <form onsubmit="return confirm('Apakah Anda Yakin ?');"
@@ -63,7 +88,11 @@
                         @endforelse
                     </tbody>
                 </table>
-                {{ $portofolio->links() }}
+            </div>
+            <div class="card-footer">
+                <div class="card-tools">
+                    {{ $portofolio->links('vendor.pagination.bootstrap-4') }}
+                </div>
             </div>
         </div>
     </div>
@@ -72,7 +101,7 @@
 @section('js')
     <script>
         $(document).ready(function() {
-            $('#table_data').DataTable({});
+            // $('#table_data').DataTable({});
         });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>

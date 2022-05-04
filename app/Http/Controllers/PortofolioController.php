@@ -8,9 +8,10 @@ use Illuminate\Support\Facades\Storage;
 
 class PortofolioController extends Controller
 {
-    public function index()
-    {
-        $portofolio = Portofolio::latest()->paginate(5);
+    public function index(Request $request)
+    {   
+        $search = $request->get('search');
+        $portofolio = Portofolio::where('name_app','like','%'.$search.'%')->latest()->paginate(5);
         return view('admin.portofolio.index', compact('portofolio'));
     }
 

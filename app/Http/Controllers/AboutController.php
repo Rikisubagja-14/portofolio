@@ -8,9 +8,11 @@ use App\Models\About;
 class AboutController extends Controller
 {
     //
-    public function index()
+    public function index(Request $request)
     {
-        $about = About::latest()->paginate(5);
+
+        $search = $request->get('search');
+        $about = About::where('name_about','like','%'.$search.'%')->latest()->paginate(5);
 
         return view('admin.about.index', compact('about'));
     }
