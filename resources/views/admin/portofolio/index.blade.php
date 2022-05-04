@@ -47,13 +47,13 @@
                                 </td>
                                 <td class="text-center">
                                     <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                        action="{{ route('portfolio.destroy', $porto->id) }}" method="POST">
-                                        <a href="{{ route('poaction="{{ route('portfolio.edit', $porto->id) }}"
-                                            class="btn btn-sm btn-primary">EDIT</a>
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>
-                                    </form>
+                                    action="{{ route('portofolio.destroy', $porto->id) }}" method="POST">
+                                    <a href="{{ route('portofolio.edit', $porto->id) }}"
+                                        class="btn btn-sm btn-primary">EDIT</a>
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>
+                                </form>
                                 </td>
                             </tr>
                         @empty
@@ -63,7 +63,7 @@
                         @endforelse
                     </tbody>
                 </table>
-                {{-- {{ $about->links() }} --}}
+                {{ $portofolio->links() }}
             </div>
         </div>
     </div>
