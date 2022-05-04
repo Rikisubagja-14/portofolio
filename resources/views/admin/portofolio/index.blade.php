@@ -23,37 +23,35 @@
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>Name App</th>
+                            <th style="width: 100px">Name App</th>
                             <th>City Clint</th>
                             <th>Category</th>
                             <th>Project Date</th>
-                            <th>Project URL</th>
-                            <th>Image Project</th>
-                            <th style="width: 200px;">Action</th>
+                            <th style="width: 100px">Project URL</th>
+                            <th style="width: 200px">Image Project</th>
+                            <th style="width: 100px" >Action</th>
                         </tr>
                     </thead>
-                    {{-- <tbody>
+                    <tbody>
                         @php $no = 1; @endphp
-                        @forelse ($about as $ab)
+                        @forelse ($portofolio as $porto)
                             <tr>
                                 <td>{{ $no++ }}</td>
-                                <td>{{ $ab->name_about }}</td>
-                                <td>{{ $ab->desc_about }}</td>
-                                <td>{{ $ab->birthday }}</td>
-                                <td>{{ $ab->website }}</td>
-                                <td>{{ $ab->phone }}</td>
-                                <td>{{ $ab->city }}</td>
-                                <td>{{ $ab->age }}</td>
-                                <td>{{ $ab->deagree }}</td>
-                                <td>{{ $ab->email }}</td>
-                                <td>{{ $ab->caregory_freelance }}</td>
-                                <td>{{ $ab->title }}</td>
-                                <td>{{ $ab->skill }}</td>
+                                <td>{{ $porto->name_app }}</td>
+                                <td>{{ $porto->city_clint }}</td>
+                                <td>{{ $porto->categoty }}</td>
+                                <td>{{ $porto->project_date }}</td>
+                                <td>{{ $porto->project_url }}</td>
+                                <td>{{ $porto->project_url }}</td>
+                                <td class="text-center">
+                                    <img src="{{ Storage::url('public/portfolio/').$porto->image_project }}" class="rounded" style="width: 150px">
+                                </td>
+
 
                                 <td class="text-center">
                                     <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                        action="{{ route('about.destroy', $ab->id) }}" method="POST">
-                                        <a href="{{ route('about.edit', $ab->id) }}"
+                                        action="{{ route('about.destroy', $porto->id) }}" method="POST">
+                                        <a href="{{ route('about.edit', $porto->id) }}"
                                             class="btn btn-sm btn-primary">EDIT</a>
                                         @csrf
                                         @method('DELETE')
@@ -66,7 +64,7 @@
                                 Data About belum Tersedia.
                             </div>
                         @endforelse
-                    </tbody> --}}
+                    </tbody>
                 </table>
                 {{-- {{ $about->links() }} --}}
             </div>
