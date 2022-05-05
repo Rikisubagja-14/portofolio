@@ -25,6 +25,10 @@
                         {{-- serach bar --}}
                         <form>
                             <div class="card-header">
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#import">
+                                    IMPORT
+                                </button>
+                                <a href="" class="btn btn-primary btn-md">EXPORT</a>
                                 <div class="card-tools">
                                     <div class="input-group input-group-sm" style="width: 150px;">
                                         <input type="text" name="search" class="form-control float-right"
@@ -105,8 +109,36 @@
                 </div>
             </div>
         </div>
-
     </div>
+
+
+    <!-- modal -->
+<div class="modal fade" id="import" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">IMPORT DATA</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form method="POST" enctype="multipart/form-data">
+                @csrf
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>PILIH FILE</label>
+                        <input type="file" name="file" class="form-control" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">TUTUP</button>
+                    <button type="submit" class="btn btn-success">IMPORT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 @endsection
 
 @section('js')
