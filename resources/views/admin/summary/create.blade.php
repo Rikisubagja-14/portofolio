@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="card-header ">
-        <h3 class="card-title ">@yield('title','Create Summary')</h3>
+        <h3 class="card-title ">@section('title','Create Summary')</h3>
     </div>
     <br />
 

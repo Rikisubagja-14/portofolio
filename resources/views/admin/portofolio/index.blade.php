@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="card-header ">
-        <h3 class="card-title ">@yield('title','Portofolio')</h3>
+        <h3 class="card-title ">@section('title','Portofolio')</h3>
     </div>
     <br />
     <div class="container card card-secondary ">
