@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="card-body ">
-                <form action="{{ route('about.store') }}" method="POST" >
+                <form action="{{ route('about.store') }}" method="POST">
                     @csrf
                     <div class="row">
                         <div class="col">
@@ -40,7 +40,7 @@
                                 <label class="col-sm-4 col-form-label">Desc About</label>
                                 <div class="col-sm-8">
                                     <input type="text" class="form-control @error('desc_about') is-invalid @enderror"
-                                        name="desc_about"  value="{{ old('desc_about') }}" placeholder="Input Desc About">
+                                        name="desc_about" value="{{ old('desc_about') }}" placeholder="Input Desc About">
                                     <!-- error message untuk title -->
                                     @error('desc_about')
                                         <span class="error invalid-feedback" style="display: inline;">{{ $message }}</span>
@@ -51,7 +51,7 @@
                                 <label class="col-sm-4 col-form-label">Brithday</label>
                                 <div class="col-sm-8">
                                     <input type="date" class="form-control @error('birthday') is-invalid @enderror"
-                                        name="birthday"  value="{{ old('birthday') }}" placeholder="Input Birthday">
+                                        name="birthday" value="{{ old('birthday') }}" placeholder="Input Birthday">
                                     <!-- error message untuk title -->
                                     @error('birthday')
                                         <span class="error invalid-feedback" style="display: inline;">{{ $message }}</span>
@@ -65,7 +65,7 @@
                                 <label class="col-sm-4 col-form-label">Website</label>
                                 <div class="col-sm-8">
                                     <input type="text" class="form-control @error('website') is-invalid @enderror"
-                                        name="website"  value="{{ old('website') }}" placeholder="Input Website">
+                                        name="website" value="{{ old('website') }}" placeholder="Input Website">
                                     <!-- error message untuk title -->
                                     @error('website')
                                         <span class="error invalid-feedback" style="display: inline;">{{ $message }}</span>
@@ -82,7 +82,8 @@
                                         name="phone" value="{{ old('phone') }}" placeholder="Input Phone">
                                     <!-- error message untuk title -->
                                     @error('phone')
-                                        <span class="error invalid-feedback" style="display: inline;">{{ $message }}</span>
+                                        <span class="error invalid-feedback"
+                                            style="display: inline;">{{ $message }}</span>
                                     @enderror
                                 </div>
                             </div>
@@ -92,11 +93,12 @@
                             <div class="form-group row">
                                 <label class="col-sm-4 col-form-label">City</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control @error('city') is-invalid @enderror" name="city" value="{{ old('city') }}"
-                                        placeholder="Input city">
+                                    <input type="text" class="form-control @error('city') is-invalid @enderror" name="city"
+                                        value="{{ old('city') }}" placeholder="Input city">
                                     <!-- error message untuk title -->
                                     @error('city')
-                                        <span class="error invalid-feedback" style="display: inline;">{{ $message }}</span>
+                                        <span class="error invalid-feedback"
+                                            style="display: inline;">{{ $message }}</span>
                                     @enderror
 
                                 </div>
@@ -109,11 +111,12 @@
                             <div class="form-group row">
                                 <label class="col-sm-4 col-form-label">Age</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control @error('age') is-invalid @enderror" name="age" value="{{ old('age') }}"
-                                        placeholder="Input age">
+                                    <input type="text" class="form-control @error('age') is-invalid @enderror" name="age"
+                                        value="{{ old('age') }}" placeholder="Input age">
                                     <!-- error message untuk title -->
                                     @error('age')
-                                        <span class="error invalid-feedback" style="display: inline;">{{ $message }}</span>
+                                        <span class="error invalid-feedback"
+                                            style="display: inline;">{{ $message }}</span>
                                     @enderror
 
                                 </div>
@@ -150,7 +153,8 @@
                                 <div class="col-sm-8">
                                     <input type="text"
                                         class="form-control @error('caregory_freelance') is-invalid @enderror"
-                                        name="caregory_freelance" value="{{ old('caregory_freelance') }}" placeholder="Input Caregory_freelance">
+                                        name="caregory_freelance" value="{{ old('caregory_freelance') }}"
+                                        placeholder="Input Caregory_freelance">
                                     @error('caregory_freelance')
                                         <span class="error invalid-feedback"
                                             style="display: inline;">{{ $message }}</span>

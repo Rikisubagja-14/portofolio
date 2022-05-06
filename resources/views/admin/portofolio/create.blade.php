@@ -10,7 +10,7 @@
 
         <div class="card card-secondary">
             <div class="card-header">
-                <a href="{{ route('about.index') }}" class="btn "><i class="fas fa-arrow-left"></i></a>
+                <a href="{{ route('portofolio.index') }}" class="btn "><i class="fas fa-arrow-left"></i></a>
                 <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip"
                         title="Collapse">
@@ -40,7 +40,8 @@
                                 <label class="col-sm-3 col-form-label">City Clint</label>
                                 <div class="col-sm-5">
                                     <textarea class="form-control @error('city_clint') is-invalid @enderror" rows="3" name="city_clint"
-                                        value="{{ old('city_clint') }}" placeholder="Enter city client ..."></textarea>
+                                        value="{{ old('city_clint') }}"
+                                        placeholder="Enter city client ..."></textarea>
                                     <!-- error message untuk title -->
                                     @error('city_clint')
                                         <span class="error invalid-feedback" style="display: inline;">{{ $message }}</span>
@@ -63,7 +64,8 @@
                                 <label class="col-sm-3 col-form-label">Project Date</label>
                                 <div class="col-sm-5">
                                     <input type="date" class="form-control @error('project_date') is-invalid @enderror"
-                                        name="project_date" value="{{ old('project_date') }}" placeholder="Input Project Date">
+                                        name="project_date" value="{{ old('project_date') }}"
+                                        placeholder="Input Project Date">
                                     <!-- error message untuk title -->
                                     @error('project_date')
                                         <span class="error invalid-feedback" style="display: inline;">{{ $message }}</span>
@@ -77,10 +79,12 @@
                                 <label class="col-sm-3 col-form-label">Project URL</label>
                                 <div class="col-sm-5">
                                     <input type="text" class="form-control @error('project_url') is-invalid @enderror"
-                                        name="project_url" value="{{ old('project_url') }}" placeholder="Input Project URL">
+                                        name="project_url" value="{{ old('project_url') }}"
+                                        placeholder="Input Project URL">
                                     <!-- error message untuk title -->
                                     @error('project_url')
-                                        <span class="error invalid-feedback" style="display: inline;">{{ $message }}</span>
+                                        <span class="error invalid-feedback"
+                                            style="display: inline;">{{ $message }}</span>
                                     @enderror
                                 </div>
                             </div>
@@ -91,7 +95,8 @@
                                 <label class="col-sm-3 col-form-label">Image Project</label>
                                 <div class="col-sm-5">
                                     <input type="file" class="form-control @error('image_project') is-invalid @enderror"
-                                        name="image_project" value="{{ old('image_project') }}" placeholder="Input Image Project">
+                                        name="image_project" value="{{ old('image_project') }}"
+                                        placeholder="Input Image Project">
                                     <!-- error message untuk title -->
                                     @error('image_project')
                                         <span class="error invalid-feedback"

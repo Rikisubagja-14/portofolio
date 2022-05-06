@@ -24,19 +24,19 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="/salesquatation" class="nav-link ">
+                  <a href="/testimonials" class="nav-link ">
                     <i class="fab fa-salesforce nav-icon"></i>
                     <p>Testimonials</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="/approve" class="nav-link ">
+                  <a href="/summary" class="nav-link ">
                     <i class="fab fa-audible nav-icon"></i>
                     <p>Contact_me</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="executesale" class="nav-link ">
+                  <a href="/summary" class="nav-link ">
                     <i class="fab fa-cloudversify nav-icon"></i>
                     <p>Summary</p>
                   </a>

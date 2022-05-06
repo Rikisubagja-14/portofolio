@@ -19,4 +19,6 @@ Route::get('/', function () {
 
 Route::resource('/about', \App\Http\Controllers\AboutController::class);
 Route::resource('/portofolio', \App\Http\Controllers\PortofolioController::class);
+Route::resource('/testimonials', \App\Http\Controllers\TestimonialsController::class);
+Route::resource('/summary', \App\Http\Controllers\SummaryController::class);
 
