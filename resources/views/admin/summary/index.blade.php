@@ -60,17 +60,18 @@
                     </thead>
                     <tbody>
                         @php $no = 1; @endphp
-                        @forelse ($testimonials as $testi)
+                        @forelse ($summary as $sumary)
                             <tr>
                                 <td>{{ $no++ }}</td>
-                                <td>{{ $testi->name_client }}</td>
-                                <td>{{ $testi->title_position }}</td>
-                                <td>{{ $testi->title_testimonials }}</td>
+                                <td>{{ $sumary->title_sumary }}</td>
+                                <td>{{ $sumary->city }}</td>
+                                <td>{{ $sumary->phone }}</td>
+                                <td>{{ $sumary->email }}</td>
                                
                                 <td class="text-center">
                                     <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                        action="{{ route('testimonials.destroy', $testi->id) }}" method="POST">
-                                        <a href="{{ route('testimonials.edit', $testi->id) }}"
+                                        action="{{ route('summary.destroy', $sumary->id) }}" method="POST">
+                                        <a href="{{ route('summary.edit', $sumary->id) }}"
                                             class="btn btn-sm btn-primary">EDIT</a>
                                         @csrf
                                         @method('DELETE')
@@ -80,7 +81,7 @@
                             </tr>
                         @empty
                             <div class="alert alert-success">
-                                Data Testimonials belum Tersedia.
+                                Data Summary belum Tersedia.
                             </div>
                         @endforelse
                     </tbody>
@@ -88,7 +89,7 @@
             </div>
             <div class="card-footer">
                 <div class="card-tools">
-                    {{ $testimonials->links('vendor.pagination.bootstrap-4') }}
+                    {{ $summary->links('vendor.pagination.bootstrap-4') }}
                 </div>
             </div>
         </div>
