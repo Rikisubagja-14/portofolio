@@ -21,4 +21,6 @@ Route::resource('/about', \App\Http\Controllers\AboutController::class);
 Route::resource('/portofolio', \App\Http\Controllers\PortofolioController::class);
 Route::resource('/testimonials', \App\Http\Controllers\TestimonialsController::class);
 Route::resource('/summary', \App\Http\Controllers\SummaryController::class);
+Route::resource('/education', \App\Http\Controllers\EducationController::class);
+Route::resource('/professional_experiences', \App\Http\Controllers\professionalexperienceController::class);
 

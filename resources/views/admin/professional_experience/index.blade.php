@@ -2,13 +2,13 @@
 
 @section('content')
     <div class="card-header ">
-        <h3 class="card-title ">@section('title','Education')</h3>
+        <h3 class="card-title ">@section('title','Professional_experience')</h3>
     </div>
     <br />
     <div class="container card card-secondary ">
         <div class="card card-secondary">
             <div class="card-header">
-                <a href="{{ route('education.create') }}" class="btn btn-primary"><i class="fas fa-plus"></i> CREATE</a>
+                <a href="{{ route('professional_experiences.create') }}" class="btn btn-primary"><i class="fas fa-plus"></i> CREATE</a>
                 <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip"
                         title="Collapse">
@@ -48,28 +48,36 @@
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th style="width: 100px">Name University</th>
-                            <th>Major</th>
+                            <th>Name Position</th>
+                            <th>Company</th>
                             <th>Date_of_entry</th>
                             <th>Out_date</th>
-                            <th style="width: 100px">title</th>
-                            <th style="width: 100px">Action</th>
+                            <th>Title 1</th>
+                            <th>Title 2</th>
+                            <th>Title 3</th>
+                            <th>Title 4</th>
+                            <th>Title 5</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         @php $no = 1; @endphp
-                        @forelse ($education as $edu)
+                        @forelse ($professional_experience as $professional)
                             <tr>
                                 <td>{{ $no++ }}</td>
-                                <td>{{ $edu->name_university }}</td>
-                                <td>{{ $edu->major }}</td>
-                                <td>{{ $edu->date_of_entry }}</td>
-                                <td>{{ $edu->out_date }}</td>
-                                <td>{{ $edu->title }}</td>
+                                <td>{{ $professional->name_position }}</td>
+                                <td>{{ $professional->company }}</td>
+                                <td>{{ $professional->date_of_entry }}</td>
+                                <td>{{ $professional->out_date }}</td>
+                                <td>{{ $professional->title_1 }}</td>
+                                <td>{{ $professional->title_2 }}</td>
+                                <td>{{ $professional->title_3 }}</td>
+                                <td>{{ $professional->title_4 }}</td>
+                                <td>{{ $professional->title_5 }}</td>
                                 <td class="text-center">
                                     <form onsubmit="return confirm('Apakah Anda Yakin ?');"
-                                        action="{{ route('education.destroy', $edu->id) }}" method="POST">
-                                        <a href="{{ route('education.edit', $edu->id) }}"
+                                        action="{{ route('professional_experiences.destroy', $professional->id) }}" method="POST">
+                                        <a href="{{ route('professional_experiences.edit', $professional->id) }}"
                                             class="btn btn-sm btn-primary">EDIT</a>
                                         @csrf
                                         @method('DELETE')
@@ -79,7 +87,7 @@
                             </tr>
                         @empty
                             <div class="alert alert-success">
-                                Data Portofolio belum Tersedia.
+                                Data Professional_experience belum Tersedia.
                             </div>
                         @endforelse
                     </tbody>
@@ -87,7 +95,7 @@
             </div>
             <div class="card-footer">
                 <div class="card-tools">
-                    {{ $education->links('vendor.pagination.bootstrap-4') }}
+                    {{ $professional_experience->links('vendor.pagination.bootstrap-4') }}
                 </div>
             </div>
         </div>

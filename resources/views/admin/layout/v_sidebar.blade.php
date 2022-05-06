@@ -43,21 +43,17 @@
                 </li>
           
                 <li class="nav-item">
-                  <a href="./index.html" class="nav-link {{request()->is('/') ? 'active' : ''}} ">
+                  <a href="/education" class="nav-link {{request()->is('education') ? 'active' : ''}} ">
                     <i class="fas fa-glass-whiskey nav-icon"></i>
                     <p>Education</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="./index.html" class="nav-link {{request()->is('/') ? 'active' : ''}} ">
+                  <a href="/professional_experiences" class="nav-link {{request()->is('professional_experiences') ? 'active' : ''}} ">
                     <i class="fab fa-battle-net nav-icon"></i>
                     <p>Professional Experience</p>
                   </a>
                 </li>
-          
-          
-           
-           
           </ul>
         </nav>
         <!-- /.sidebar-menu -->

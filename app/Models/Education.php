@@ -9,8 +9,6 @@ class Education extends Model
 {
     use HasFactory;
 
-
-
     protected $fillable = [
         'name_university',
         'major',
