@@ -56,7 +56,7 @@
                 </li>
 
                 <li class="nav-item">
-                  <a href="/professional_experiences" class="nav-link {{request()->is('professional_experiences') ? 'active' : ''}} ">
+                  <a href="/logout" class="nav-link {{request()->is('logout') ? 'active' : ''}} ">
                     <i class="fas fa-sign-out-alt nav-icon"></i>
                     <p>Logout</p>
                   </a>
