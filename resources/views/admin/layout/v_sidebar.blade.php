@@ -13,13 +13,13 @@
           
                 <li class="nav-item">
                   <a href="/about" class="nav-link  {{request()->is('about') ? 'active' : ''}} ">
-                    <i class="fas fa-code-branch nav-icon"></i>
+                    <i class="fas fa-address-card nav-icon"></i>
                     <p>About</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="/portofolio" class="nav-link {{request()->is('portofolio') ? 'active' : ''}} ">
-                    <i class="fas fa-bezier-curve nav-icon"></i>
+                    <i class="fas fa-passport nav-icon"></i>
                     <p>Portofolio</p>
                   </a>
                 </li>
@@ -30,21 +30,21 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="/summary" class="nav-link {{request()->is('/') ? 'active' : ''}} ">
-                    <i class="fab fa-audible nav-icon"></i>
+                  <a href="/contact_me" class="nav-link {{request()->is('contact_me') ? 'active' : ''}} ">
+                    <i class="fas fa-address-book nav-icon"></i>
                     <p>Contact_me</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="/summary" class="nav-link {{request()->is('summary') ? 'active' : ''}} ">
-                    <i class="fab fa-cloudversify nav-icon"></i>
+                    <i class="fab fa-bitbucket nav-icon"></i>
                     <p>Summary</p>
                   </a>
                 </li>
           
                 <li class="nav-item">
                   <a href="/education" class="nav-link {{request()->is('education') ? 'active' : ''}} ">
-                    <i class="fas fa-glass-whiskey nav-icon"></i>
+                    <i class="fas fa-school nav-icon"></i>
                     <p>Education</p>
                   </a>
                 </li>
@@ -52,6 +52,13 @@
                   <a href="/professional_experiences" class="nav-link {{request()->is('professional_experiences') ? 'active' : ''}} ">
                     <i class="fab fa-battle-net nav-icon"></i>
                     <p>Professional Experience</p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="/professional_experiences" class="nav-link {{request()->is('professional_experiences') ? 'active' : ''}} ">
+                    <i class="fas fa-sign-out-alt nav-icon"></i>
+                    <p>Logout</p>
                   </a>
                 </li>
           </ul>

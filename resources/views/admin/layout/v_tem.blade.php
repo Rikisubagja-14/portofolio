@@ -56,7 +56,7 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="/dashboard" class="brand-link">
+            <a href="/" class="brand-link">
                 <img src="{{ asset('template/dist/img/logoriki.png') }}" alt="Logo"
                     class="brand-image img-circle elevation-5 img-fluid" style="opacity: .9 ">
                 <span class="brand-text font-weight-light text-center ">Admin Portofolio</span>

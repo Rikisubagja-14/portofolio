@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('admin.layout.v_tem');
 });
+Route::get('/', function () {
+    return view('admin.dashboard.index');
+});
 
 Route::resource('/about', \App\Http\Controllers\AboutController::class);
 Route::resource('/portofolio', \App\Http\Controllers\PortofolioController::class);
