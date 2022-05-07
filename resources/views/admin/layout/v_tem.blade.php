@@ -66,15 +66,7 @@
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- Sidebar user panel (optional) -->
-                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                    <div class="image">
-                        <img src="{{ asset('template/dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2"
-                            alt="User Image">
-                    </div>
-                    <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
-                    </div>
-                </div>
+               <br/>
                 @include('admin.layout.v_sidebar')
 
             </div>
@@ -90,10 +82,10 @@
 
         <!-- /.content-wrapper -->
         <footer class="main-footer">
-            <strong>Copyright &copy; 2021 <a href="https://adminlte.io">Riki subagja</a>.</strong>
+            <strong>Copyright &copy; 2021 <a href="https://rikisubagja.com">Riki subagja</a>.</strong>
             All rights reserved.
             <div class="float-right d-none d-sm-inline-block">
-                <b>Version</b> 3.2.0-rc
+                <b>Beta_Version</b> 1.0.0
             </div>
         </footer>
 
@@ -158,6 +150,10 @@
     <script src="{{ asset('template/plugins/daterangepicker/daterangepicker.js') }}"></script>
     <script src="{{ asset('template/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js') }}"></script>
 
+
+    <script src="{{asset('template/plugins/flot/jquery.flot.js')}}"></script>
+    <script src="{{asset('template/plugins/flot/plugins/jquery.flot.resize.js')}}"></script>
+    <script src="{{asset('template/plugins/flot/plugins/jquery.flot.pie.js')}}"></script>
 
     @yield('js')
 </body>
