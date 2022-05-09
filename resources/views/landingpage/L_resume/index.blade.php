@@ -23,22 +23,15 @@
 
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
-                <h4>Master of Fine Arts &amp; Graphic Design</h4>
-                <h5>2015 - 2016</h5>
-                <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-                <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero
-                    voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div>
-            <div class="resume-item">
-                <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-                <h5>2010 - 2014</h5>
-                <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+                <h4>TEKNIK INFORMATIKA</h4>
+                <h5>2017 - 2021</h5>
+                <p><em>Sekolah Tinggi Teknologi Bandung</em></p>
                 <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel
                     ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur
                     neque etlon sader mart dila</p>
             </div>
         </div>
-        <div class="col-lg-6">
+        {{-- <div class="col-lg-6">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
                 <h4>Senior graphic design specialist</h4>
@@ -72,7 +65,7 @@
                 </ul>
                 </p>
             </div>
-        </div>
+        </div> --}}
     </div>
 
 </div>

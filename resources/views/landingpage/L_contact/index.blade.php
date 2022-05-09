@@ -11,7 +11,7 @@
             <div class="info-box">
                 <i class="bx bx-map"></i>
                 <h3>My Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Bandung, Indonesia 40379</p>
             </div>
         </div>
 
@@ -20,7 +20,6 @@
                 <i class="bx bx-share-alt"></i>
                 <h3>Social Profiles</h3>
                 <div class="social-links">
-                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                     <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
                     <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
                     <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
@@ -33,14 +32,14 @@
             <div class="info-box">
                 <i class="bx bx-envelope"></i>
                 <h3>Email Me</h3>
-                <p>contact@example.com</p>
+                <p>riki43733@gmail.com</p>
             </div>
         </div>
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
             <div class="info-box">
                 <i class="bx bx-phone-call"></i>
                 <h3>Call Me</h3>
-                <p>+1 5589 55488 55</p>
+                <p>+62 821 1785 4565</p>
             </div>
         </div>
     </div>

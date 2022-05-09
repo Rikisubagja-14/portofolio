@@ -1,8 +1,7 @@
 <div class="container">
 
-    <span style='font-size:90px;'>&#129409;</span>
-    &nbsp;
-    <h1><a href="index.html">'Riki Subagja'</a></h1>
+    
+    <h1>'Riki Subagja'</h1>
     <h2>I'm a <span>Web & Mobile Developers</span> from Indonesia</h2>
 
     <nav id="navbar" class="navbar">
@@ -18,10 +17,10 @@
     <!-- .navbar -->
 
     <div class="social-links">
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        <a href="#" class="skype"><i class="bi bi-skype"></i></a>
+        <a href="https://www.facebook.com/riki.subagja.71653318/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/rikifriazka1409/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/riki-subagja-9b494a133/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="live:riki43733" class="skype"><i class="bi bi-skype"></i></a>
     </div>
 
 </div>

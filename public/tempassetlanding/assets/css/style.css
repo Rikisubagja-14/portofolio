@@ -11,7 +11,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/riki.jpg") top right no-repeat;
+  background: #000000 url("../img/relax.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgb(0, 0, 0);
 }
 #header.header-top .social-links, #header.header-top h2 {
   display: none;
