@@ -14,10 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('admin.dashboard.index');
-// });
-
+Route::get('/', function () {
+    return view('landingpage.layout.index');
+});
+Auth::routes();
+Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
 Route::resource('/about', \App\Http\Controllers\AboutController::class);
 Route::resource('/portofolio', \App\Http\Controllers\PortofolioController::class);
 Route::resource('/testimonials', \App\Http\Controllers\TestimonialsController::class);
@@ -25,5 +26,5 @@ Route::resource('/contact_me', \App\Http\Controllers\ContactmeController::class)
 Route::resource('/summary', \App\Http\Controllers\SummaryController::class);
 Route::resource('/education', \App\Http\Controllers\EducationController::class);
 Route::resource('/professional_experiences', \App\Http\Controllers\professionalexperienceController::class);
-Auth::routes();
-Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
+
+
