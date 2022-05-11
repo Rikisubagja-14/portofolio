@@ -44,16 +44,16 @@
             </div>
 
             <div class="card-body table-responsive p-0" style="height: 300px; ">
-                <table id="table_data" class="table table-head-fixed text-nowrap">
+                <table id="table_data" class="table table-bordered table-hover">
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th style="width: 100px">Name University</th>
+                            <th>Name University</th>
                             <th>Major</th>
                             <th>Date_of_entry</th>
                             <th>Out_date</th>
-                            <th style="width: 100px">title</th>
-                            <th style="width: 100px">Action</th>
+                            <th>title</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>

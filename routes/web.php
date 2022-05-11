@@ -14,9 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('landingpage.layout.index');
-});
+
+
+//route frontend landingpage
+Route::resource('/', \App\Http\Controllers\ControllerFronend\FrontaboutController::class);
+
+//route backend admin//
 Auth::routes();
 Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
 Route::resource('/about', \App\Http\Controllers\AboutController::class);

@@ -47,10 +47,10 @@
             </div>
 
             <div class="card-body table-responsive p-0" style="height: 300px;">
-                <table id="table_data" class="table table-head-fixed text-nowrap">
+                <table id="table_data" class="table table-bordered table-hover">
                     <thead>
                         <tr>
-                            <th style="width:100px">No</th>
+                            <th>No</th>
                             <th>Name About</th>
                             <th>Desc About</th>
                             <th>birthday</th>
@@ -63,7 +63,7 @@
                             <th>caregory_freelance</th>
                             <th>title</th>
                             <th>skill</th>
-                            <th style="width:100%">Action</th>
+                            <th colspan=5>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -84,15 +84,17 @@
                                 <td>{{ $ab->title }}</td>
                                 <td>{{ $ab->skill }}</td>
 
-                                <td class="text-center">
+                                <td class="align-right">
                                     <form onsubmit="return confirm('Apakah Anda Yakin ?');"
                                         action="{{ route('about.destroy', $ab->id) }}" method="POST">
                                         <a href="{{ route('about.edit', $ab->id) }}"
                                             class="btn btn-sm btn-primary">EDIT</a>
                                         @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>
                                     </form>
+                                </td>
+                                <td>
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-sm btn-danger">HAPUS</button>
                                 </td>
                             </tr>
                         @empty

@@ -43,20 +43,20 @@
 
         <!-- ======= About Me ======= -->
         <div class="about-me container">
-            @include('landingpage.L_about.index')
+           @include('landingpage.L_about.index')
         </div>
         <!-- End About Me -->
 
         <!-- ======= Skills  ======= -->
         <div class="skills container">
-         @include('landingpage.L_skills.index')
+        @include('landingpage.L_skills.index')
         </div>
         <!-- End Skills -->
 
         <!-- ======= Testimonials ======= -->
-        <div class="testimonials container">
+        {{-- <div class="testimonials container">
           @include('landingpage.L_Testi.index')
-        </div>
+        </div> --}}
         <!-- End Testimonials  -->
 
     </section>
@@ -64,8 +64,11 @@
 
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
+      <div class="container">
        @include('landingpage.L_resume.index')
-    </section><!-- End Resume Section -->
+      </div>
+    </section>
+    <!-- End Resume Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
