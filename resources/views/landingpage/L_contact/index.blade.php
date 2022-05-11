@@ -20,10 +20,10 @@
                 <i class="bx bx-share-alt"></i>
                 <h3>Social Profiles</h3>
                 <div class="social-links">
-                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.facebook.com/riki.subagja.71653318/" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/rikifriazka1409/" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/riki-subagja-9b494a133/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    <a href="skype:<riki43733>?<action>" class="skype"><i class="bi bi-skype"></i></a>
                 </div>
             </div>
         </div>

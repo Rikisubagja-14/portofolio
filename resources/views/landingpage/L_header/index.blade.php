@@ -20,7 +20,7 @@
         <a href="https://www.facebook.com/riki.subagja.71653318/" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="https://www.instagram.com/rikifriazka1409/" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="https://www.linkedin.com/in/riki-subagja-9b494a133/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        <a href="live:riki43733" class="skype"><i class="bi bi-skype"></i></a>
+        <a href="skype:<riki43733>?<action>" class="skype"><i class="bi bi-skype"></i></a>
     </div>
 
 </div>
