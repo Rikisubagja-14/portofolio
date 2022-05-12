@@ -23,13 +23,6 @@ class FrontaboutController extends Controller
      return view('landingpage.layout.index', compact('aboutt','summar','educ','portofolio'));
     }
 
-
-    public function create()
-    {
-        $contact = Contact_me::all();
-        return View('landingpage.layout.index');
-    }
-
     public function store(Request $request)
     {
         // untuk validasi form
@@ -49,7 +42,7 @@ class FrontaboutController extends Controller
             
         ]);
 
-        return redirect()->route('landingpage.layout.index')->with(['success' => 'Success send!']);
+        return redirect()->route('index')->with(['success' => 'Success send!']);
 
     }
 }

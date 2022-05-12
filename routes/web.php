@@ -18,7 +18,9 @@ use Illuminate\Support\Facades\Route;
 
 //route frontend landingpage
 Route::resource('/', \App\Http\Controllers\ControllerFronend\FrontaboutController::class);
-
+Route::resource('Contact_me', FrontaboutController::class)->except([
+    'create'
+]);
 //route backend admin//
 Auth::routes();
 Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');

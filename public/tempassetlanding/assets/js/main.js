@@ -130,7 +130,7 @@
 
         setTimeout(function() {
           initial_nav.classList.add('section-show')
-        }, 350);
+        }, 200);
 
         scrollto(window.location.hash)
       }

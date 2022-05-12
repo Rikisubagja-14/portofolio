@@ -18,10 +18,12 @@ class ContactmeController extends Controller
 
         return view('admin.contact_me.index', compact('contactme'));
     }
-
+  
     public function destroy(Contact_me $contactme)
     {
         $contactme->delete();
         return redirect()->route('contact_me.index')->with(['success' => 'Data Berhasil Dihapus!']);
     }
+
+
 }
