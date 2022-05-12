@@ -46,7 +46,10 @@
             </div>
         </div>
     </div>
-
+    <br>
+    <div class="container-fluid">
+        <p class="text-center" style="color:orange">!! Required to fill in!! If it has not been filled in, it must be checked again on the contact page !!</p>
+    </div>
     <form action="{{ route('store') }}" method="POST" role="form" class=" mt-4">
         @csrf
         <div class="row">
@@ -91,13 +94,5 @@
 <script>
     CKEDITOR.replace('');
 </script>
-{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-<script>
-    //message with toastr
-    @if (session()->has('success'))
-        toastr.success('{{ session('success') }}', 'BERHASIL!');
-    @elseif(session()->has('error'))
-        toastr.error('{{ session('error') }}', 'GAGAL!');
-    @endif
-</script>  --}}
+
 @endsection

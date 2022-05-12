@@ -81,25 +81,14 @@
        @include('landingpage.L_contact.index')
     </section>
     <!-- End Contact Section -->
+    <!-- /.content-wrapper -->
+    <footer class="main-footer text-center">
+        <strong>Copyright &copy; 2021 <a href="https://rikisubagja.com">Riki subagja</a>.</strong>
+        All rights reserved.
+    </footer>
 
 
-    @section('js')
-    <script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
-    <script>
-        CKEDITOR.replace('');
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script>
-        //message with toastr
-        @if (session()->has('success'))
-            toastr.success('{{ session('success') }}', 'BERHASIL!');
-        @elseif(session()->has('error'))
-            toastr.error('{{ session('error') }}', 'GAGAL!');
-        @endif
-    </script> 
-    @endsection
-
-    
+ 
 
     <!-- Vendor JS Files -->
     <script src="{{ asset('tempassetlanding/assets/vendor/purecounter/purecounter.js') }}"></script>
