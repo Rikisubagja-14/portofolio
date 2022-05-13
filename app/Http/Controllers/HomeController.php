@@ -1,6 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\About;
+use App\Models\Contact_me;
+use App\Models\Portofolio;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -23,6 +27,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('admin.dashboard.index');
+        $contactcount = Contact_me::count();
+        $aboutcount = About::count();
+        $usercount = User::count();
+        $portofoliocount = Portofolio::count();
+        return view('admin.dashboard.index', compact('contactcount','aboutcount','usercount','portofoliocount'));
     }
 }

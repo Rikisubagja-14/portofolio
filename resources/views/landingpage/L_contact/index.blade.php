@@ -48,7 +48,8 @@
     </div>
     <br>
     <div class="container-fluid">
-        <p class="text-center" style="color:orange">!! Required to fill in!! If it has not been filled in, it must be checked again on the contact page !!</p>
+        <p class="text-center" style="color:orange">!! Required to fill in!! If it has not been filled in, it must be
+            checked again on the contact page !!</p>
     </div>
     <form action="{{ route('store') }}" method="POST" role="form" class=" mt-4">
         @csrf
@@ -84,15 +85,15 @@
         </div>
         <div class="my-3">
         </div>
-        <div class="text-center"><button type="submit" class="btn btn btn-outline-warning">Send Message</button></div>
+        <div class="text-center"><button type="submit" class="btn btn btn-outline-warning">Send Message</button>
+        </div>
     </form>
 </div>
 
 
 @section('js')
-<script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
-<script>
-    CKEDITOR.replace('');
-</script>
-
+    <script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('');
+    </script>
 @endsection
