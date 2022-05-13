@@ -28,8 +28,8 @@
                             <div class="form-group row">
                                 <label class="col-sm-3 col-form-label">Title Summary</label>
                                 <div class="col-sm-5">
-                                    <input type="text" class="form-control @error('title_sumary') is-invalid @enderror"
-                                        name="title_sumary" value="{{ old('title_sumary') }}" placeholder="Input title summary">
+                                    <textarea type="textarea" class="form-control @error('title_sumary') is-invalid @enderror"
+                                        name="title_sumary" value="{{ old('title_sumary') }}" placeholder="Input title summary"></textarea>
                                     @error('title_sumary')
                                         <span class="error invalid-feedback" style="display: inline;">{{ $message }}</span>
                                     @enderror

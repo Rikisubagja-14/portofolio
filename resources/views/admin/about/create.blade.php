@@ -39,8 +39,8 @@
                             <div class="form-group row">
                                 <label class="col-sm-4 col-form-label">Desc About</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control @error('desc_about') is-invalid @enderror"
-                                        name="desc_about" value="{{ old('desc_about') }}" placeholder="Input Desc About">
+                                    <textarea type="textarea"  class="form-control @error('desc_about') is-invalid @enderror"
+                                        name="desc_about" value="{{ old('desc_about') }}" placeholder="Input Desc About"></textarea>
                                     <!-- error message untuk title -->
                                     @error('desc_about')
                                         <span class="error invalid-feedback" style="display: inline;">{{ $message }}</span>
@@ -166,8 +166,8 @@
                             <div class="form-group row">
                                 <label class="col-sm-4 col-form-label">Title</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control @error('title') is-invalid @enderror"
-                                        name="title" value="{{ old('title') }}" placeholder="Input title">
+                                    <textarea type="textarea" class="form-control @error('title') is-invalid @enderror"
+                                        name="title" value="{{ old('title') }}" placeholder="Input title"></textarea>
                                     @error('title')
                                         <span class="error invalid-feedback"
                                             style="display: inline;">{{ $message }}</span>

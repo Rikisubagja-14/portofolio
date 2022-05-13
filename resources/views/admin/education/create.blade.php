@@ -79,9 +79,9 @@
                             <div class="form-group row">
                                 <label class="col-sm-3 col-form-label">Title</label>
                                 <div class="col-sm-5">
-                                    <input type="text" class="form-control @error('title') is-invalid @enderror"
+                                    <textarea type="textarea" class="form-control @error('title') is-invalid @enderror"
                                         name="title" value="{{ old('title') }}"
-                                        placeholder="Input Project URL">
+                                        placeholder="Input Project URL"></textarea>
                                     <!-- error message untuk title -->
                                     @error('title')
                                         <span class="error invalid-feedback"
