@@ -2,8 +2,19 @@
     <div class="section-title">
         <h2>Resume</h2>
         <p>Check My Resume</p>
-    </div>
 
+
+        <div class="dropdown-center">
+            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                PLEASE DOWNLOAD RESUME
+              </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
+              <li><a class="dropdown-item" href="{{asset('cvRiki.pdf')}}" target="_blank">resume Indonesia</a></li>
+              <li><a class="dropdown-item" href="{{asset('cvRikienglish.pdf')}}" target="_blank">resume English</a></li>
+            </ul>
+          </div>
+    </div>
+    
     <div class="row">
         <div class="col-lg-6">
             <h3 class="resume-title">Sumary</h3>
