@@ -36,6 +36,7 @@
     <div id="portfolio-details" class="portfolio-details">
       <div class="container">
 
+        @foreach ($potodetail as $por )
         <div class="row">
 
           <div class="col-lg-8">
@@ -78,6 +79,8 @@
 
         </div>
 
+        @endforeach
+       
       </div>
     </div><!-- End Portfolio Details -->
 

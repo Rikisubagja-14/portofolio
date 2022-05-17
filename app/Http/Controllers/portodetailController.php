@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class portodetailController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $potodetail = Portofolio::all();
         return view('landingpage.layout.portfoliodetails',compact('potodetail'));
