@@ -9,8 +9,20 @@ class portodetailController extends Controller
 {
     public function index(Request $request)
     {
-        $potodetail = Portofolio::all();
-        return view('landingpage.layout.portfoliodetails',compact('potodetail'));
+        $portofolio = Portofolio::all();
+        
+        return view('landingpage.L_porto.portfoliodetails',compact('portofolio'));
 
     }
+
+    public function show(Request $request,$id)
+    {
+        $portodetail = Portofolio::detail($id);
+        
+        return view('landingpage.layout.portfoliodetails',compact('portodetail'));
+
+    }
+
+
+   
 }

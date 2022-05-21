@@ -11,7 +11,8 @@
             <li><a class="nav-link" href="#resume">Resume</a></li>
             <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
             <li><a class="nav-link" href="#contact">Contact</a></li>
-            <li><a href="#resume" class="nav-link btn btn-dark" style="color:orange" download="ResumePdf">Download Resume</a></li>
+            <li><a href="#portfolio" class="nav-link btn btn-dark" style="color:orange" download="ResumePdf">Download Resume</a></li>
+            
         </ul>
         
         <i class="bi bi-list mobile-nav-toggle"></i>

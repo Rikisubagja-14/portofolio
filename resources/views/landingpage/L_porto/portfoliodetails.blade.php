@@ -36,7 +36,7 @@
     <div id="portfolio-details" class="portfolio-details">
       <div class="container">
 
-        @foreach ($potodetail as $por )
+        @foreach ($portofolio as $portof)
         <div class="row">
 
           <div class="col-lg-8">
@@ -64,7 +64,7 @@
           </div>
 
           <div class="col-lg-4 portfolio-info">
-            <h3>Project information</h3>
+            <h3>{{$portof->name_app}}</h3>
             <ul>
               <li><strong>Category</strong>: Web design</li>
               <li><strong>Client</strong>: ASU Company</li>
@@ -82,7 +82,8 @@
         @endforeach
        
       </div>
-    </div><!-- End Portfolio Details -->
+    </div>
+    <!-- End Portfolio Details -->
 
   </main><!-- End #main -->
 
