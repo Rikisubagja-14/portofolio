@@ -8,9 +8,9 @@
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-    <link rel="stylesheet" href="{{ !!asset('template/plugins/fontawesome-free/css/all.min.css') }}">
-    <link rel="stylesheet" href="{{ !!asset('template/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ !!asset('template/dist/css/adminlte.min.css?v=3.2.0') }}">
+    <link rel="stylesheet" href="{{ asset('template/plugins/fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('template/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('template/dist/css/adminlte.min.css?v=3.2.0') }}">
 </head>
 
 <body class="hold-transition login-page">
@@ -95,11 +95,11 @@
     </div>
 
 
-    <script src="{{ !!asset('template/plugins/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('template/plugins/jquery/jquery.min.js') }}"></script>
 
-    <script src="{{ !!asset('template/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('template/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
-    <script src="{{ !!asset('template/dist/js/adminlte.min.js?v=3.2.0') }}"></script>
+    <script src="{{ asset('template/dist/js/adminlte.min.js?v=3.2.0') }}"></script>
 </body>
 
 </html>
