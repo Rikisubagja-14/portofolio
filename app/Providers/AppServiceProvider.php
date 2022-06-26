@@ -26,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         if(env(key:'APP_ENV')!== 'local'){
-            URL::forceScheme(scheme:'htpps');
+            URL::forceScheme(scheme:'https');
         }
     }
 }
