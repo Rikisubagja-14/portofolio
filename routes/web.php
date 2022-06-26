@@ -32,7 +32,3 @@ Route::resource('/education', \App\Http\Controllers\EducationController::class);
 Route::resource('/professional_experiences', \App\Http\Controllers\professionalexperienceController::class);
 
 
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -14,7 +14,7 @@
 
                     <div class="info-box-content">
                         <span class="info-box-text">Contact Me</span>
-                        <span class="info-box-number">{{$contactcount}}</span>
+                        <span class="info-box-number">{{ $contactcount }}</span>
 
                         <div class="progress">
                             <div class="progress-bar" style="width: 70%"></div>
@@ -31,7 +31,7 @@
 
                     <div class="info-box-content">
                         <span class="info-box-text">About</span>
-                        <span class="info-box-number">{{$aboutcount}}</span>
+                        <span class="info-box-number">{{ $aboutcount }}</span>
 
                         <div class="progress">
                             <div class="progress-bar" style="width: 70%"></div>
@@ -48,7 +48,7 @@
 
                     <div class="info-box-content">
                         <span class="info-box-text">User</span>
-                        <span class="info-box-number">{{$usercount}}</span>
+                        <span class="info-box-number">{{ $usercount }}</span>
 
                         <div class="progress">
                             <div class="progress-bar" style="width: 70%"></div>
@@ -65,7 +65,7 @@
 
                     <div class="info-box-content">
                         <span class="info-box-text">Portofolio</span>
-                        <span class="info-box-number">{{$portofoliocount}}</span>
+                        <span class="info-box-number">{{ $portofoliocount }}</span>
 
                         <div class="progress">
                             <div class="progress-bar" style="width: 70%"></div>
@@ -79,8 +79,7 @@
         </div>
     </div>
 
-{{-- 
-    <div class="container-fluid">
+    {{-- <div class="container-fluid">
         <div class="card card-primary card-outline">
             <div class="card-header">
                 <h3 class="card-title">
