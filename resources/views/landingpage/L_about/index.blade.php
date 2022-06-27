@@ -31,7 +31,7 @@
                         <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>{{ $abt->age }}</span>
                         </li>
                         <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong>
-                            <span>{{ $abt->degree }}</span>
+                            <span>{{ $abt->deagree }}</span>
                         </li>
                         <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>{{ $abt->email }}</span>
                         </li>
