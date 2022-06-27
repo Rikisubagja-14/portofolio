@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('major');
             $table->date('date_of_entry');
             $table->date('out_date');
-            $table->string('title');
+            $table->string('title',1000);
             $table->timestamps();
         });
     }
