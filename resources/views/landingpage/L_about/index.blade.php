@@ -12,28 +12,32 @@
             <h3>{{ $abt->name_about }}</h3>
             <p class="fst-italic">{{ $abt->desc_about }}</p>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-8">
                     <ul>
                         <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong>
-                            <span>{{ $abt->birthday }}</span></li>
+                            <span>{{ $abt->birthday }}</span>
+                        </li>
                         <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <br>
-                            <span>{{ $abt->website }}</span></li>
+                            <span>{{ $abt->website }}</span>
+                        </li>
                         <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>{{ $abt->phone }}</span>
                         </li>
                         <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>{{ $abt->city }}</span>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                     <ul>
                         <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>{{ $abt->age }}</span>
                         </li>
                         <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong>
-                            <span>{{ $abt->degree }}</span></li>
+                            <span>{{ $abt->degree }}</span>
+                        </li>
                         <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>{{ $abt->email }}</span>
                         </li>
                         <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong>
-                            <span>{{ $abt->caregory_freelance }}</span></li>
+                            <span>{{ $abt->caregory_freelance }}</span>
+                        </li>
                     </ul>
                 </div>
             </div>
