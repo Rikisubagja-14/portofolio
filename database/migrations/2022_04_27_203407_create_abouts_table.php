@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('abouts', function (Blueprint $table) {
             $table->id();
             $table->string('name_about');
-            $table->string('desc_about');
+            $table->string('desc_about',10000);
             $table->date('birthday');
             $table->string('website');
             $table->string('phone');
@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('deagree');
             $table->string('email');
             $table->string('caregory_freelance');
-            $table->string('title');
+            $table->string('title',10000);
             $table->string('skill');
             $table->timestamps();
             

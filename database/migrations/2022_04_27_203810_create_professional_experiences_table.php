@@ -19,11 +19,11 @@ return new class extends Migration
             $table->string('company');
             $table->date('date_of_entry');
             $table->date('out_date');
-            $table->string('title_1');
-            $table->string('title_2');
-            $table->string('title_3');
-            $table->string('title_4');
-            $table->string('title_5');
+            $table->string('title_1',500);
+            $table->string('title_2',500);
+            $table->string('title_3',500);
+            $table->string('title_4',500);
+            $table->string('title_5',500);
             $table->timestamps();
         });
     }
