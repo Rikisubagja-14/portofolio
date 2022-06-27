@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('deagree');
             $table->string('email');
             $table->string('caregory_freelance');
-            $table->string('title',10000);
+            $table->string('title');
             $table->string('skill');
             $table->timestamps();
             
